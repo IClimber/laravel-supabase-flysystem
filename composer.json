@@ -1,5 +1,5 @@
 {
-    "name": "quix-labs/laravel-supabase-flysystem",
+    "name": "iclimber/laravel-supabase-flysystem",
     "description": "Supabase Adapter for Laravel Flysystem Storage",
     "type": "library",
     "license": "MIT",
