@@ -119,7 +119,9 @@ class SupabaseAdapter implements FilesystemAdapter
 
     public function readStream(string $path)
     {
-        $response = (clone $this->httpClient)->withOptions(['stream' => true])->get("/object/{$this->bucket}/{$path}");
+        $response = (clone $this->httpClient)
+            //->withOptions(['stream' => true])
+            ->get("/object/{$this->bucket}/{$path}");
 
         return Utils::streamFor($response)->detach();
     }
